@@ -1,0 +1,65 @@
+﻿<!--Making text:Search Form on the border is not working
+    I used fieldset and legend to visualize it from line37 but not worked..
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+
+    <link rel="stylesheet" href="../../../bootstrap-3.3.7-dist/css/bootstrap.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    
+
+    <link href="app.css" rel="stylesheet">
+    <title>CourseMan!</title>
+</head>
+<body>
+
+    <h1 id="subtitle-word2">Course Man => Search/Register</h1>
+    <br>
+
+    <header class="flex primary-header">
+        <h1 id="subNav"></h1> <!--set h1 to move nav elements to rightside-->
+        <button class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false" style="background-image: none; background-color: #87ceeb; width: 80px; height:80px"><a href="index.html" style="color: black">Menu</a></button>
+        <nav class="navheader">
+            <ul class="primary-navigation flex" data-visible="false">
+                <li><a href="index.html"><span aria-hidden="true">00</span>Home</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="checkbox-collects ">
+        <fieldset>
+            <legend><h2>Search Form</h2></legend>
+            <div id="username2">
+                <p1>Name:</p1>
+                <input id=username name="name" type="text"><br>
+            </div>
+
+            <div id="searchFor2">
+                <p1>Search For:</p1>
+                <input id="searchFor" name="search" type="text" placeholder="Enter terms.."> <br>
+            </div>
+
+            <button id="random" onclick="searchCsecourse()">Show Courses</button>
+        </fieldset>
+
+        <fieldset>
+            <div id="innerBorder" style="display:none">
+                <div id="courseList">
+                </div>
+                <button id="random2" onclick="arrayAddtoLocalStorage2()">Register</button>
+
+            </div>
+        </fieldset>
+    </div>
+
+    <script src="search.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
